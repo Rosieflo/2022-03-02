@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+ul, li, ol{list-style: none;}
+a{
+  color: #222328;
+  text-decoration: none;
+}
+body{
+  color: #222328;
+  background-color: #fff;
+  font-size: 12px;
+  font-family: '나눔 고딕', arial, sans-serif;
+}
+
+header{
+  width: 200px;
+  height: 650px;
+  float: left;
+}
+
+.gnb{
+  margin: 0 10px 0 10px;
+}
+.gnb > ul{}
+.gnb > ul > li{
+  text-align: center;
+  line-height: 28px;
+}
+.gnb > ul > li > a{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: lightgreen;
+  background-color: green;
+  transition: 0.4s;
+}
+.gnb > ul > li > a:hover{
+  color: green;
+  background-color: lightgreen;
+}
+
+.sub{display: none;}
+.sub > li{}
+.sub > li > a{
+  display: block;
+  color: #fff;
+  background-color: blue;
+  transition: 0.4s;
+}
+.sub > li > a:hover{
+  color: #222;
+  background-color: aliceblue;
+}
+
+main{
+  width: 800px;
+  height: 550px;
+  float: left;
+}
+
+.slide{
+  overflow: hidden;
+  width: 800px;
+  height: 350px;
+}
+.s_wrap{
+  width: 800px;
+  height: 1050px;
+}
+.s_wrap > li{
+  width: 800px;
+  height: 350px;
+}
+.s_wrap > li > a > img{
+  width: 800px;
+  height: 350px;
+}
+
+.t_con{
+  width: 266px;
+  height: 200px;
+  background-color: darkseagreen;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.t_con > ul{
+  position: relative;
+}
+.t_con > ul > li{
+  float: left;
+}
+.t_con > ul > li > a{
+  display: block;
+  padding: 4px 10px;
+  color: #fff;
+  background-color: blueviolet;
+}
+.t_con ul li:last-child .con li{display: inline;}
+.t_con ul li:last-child .con li a img{
+  width: 79.5px;
+}
+.con{
+  position: absolute;
+    left: 0px;
+  display: none;
+}
+.act{
+  color: #222 !important;
+  background-color: linen !important;
+}
+
+
+
+.gallery{
+  width: 267px;
+  height: 200px;
+  background-color: rgb(79, 116, 79);
+  float: left;
+}
+.banner{
+  width: 267px;
+  height: 200px;
+  background-color: rgb(84, 143, 84);
+  float: left;
+}
+
+footer{
+  width: 800px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
+
+
+
+.modal{
+  position: fixed;
+    left: 0px;
+    top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  z-index: 1001;
+  display: none;
+}
+.m_wrap{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+}
